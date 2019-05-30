@@ -1,7 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import * as styles from './index.module.css';
 
-function App() {
+function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.introduce}>
@@ -11,22 +12,39 @@ function App() {
           alt="Maria Plieshka portrait"
         />
         <p className={styles.description}>
-          Currently I am acvively immersing myself into the world of Frontend.
-          I am looking for a job opportunities in Berlin.
-          I would be happy to learn more, to work in a strong friendly team and bring some fresh ideas to it.
-          You can find out a bit more about me by visiting the additional pages of this site :)
+          Hello world! My name is Maria.
+          <p>
+            I'm Currently I'm acvively immersing myself into the world of Frontend.
+            I've successfully finished two courses in HTML Academy which are: 
+              <a
+              className={styles.text_link}
+              href="./course_1.jpg"
+              >
+            Professional HTML/CSS
+              </a>
+            and 
+              <a
+              className={styles.text_link}
+              href="./course_2.jpg"
+              >
+            JavaScript
+              </a>
+            .
+            Now I am gradually learning ReactJS and looking for a job opportunities.
+            I would be happy to learn more, to work in a strong friendly team and bring some fresh ideas to it.
+          </p>
         </p>
       </div>
       <footer className={styles.footer}>
-        <a
+        <Link
           className={styles.footer_link}
-          href="/contacts"
+          to="/contacts"
         >
           Contacts
-         </a>
+        </Link>
         <a
           className={styles.footer_link}
-          href="/contacts"
+          href="https://github.com/zuni4ka"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,4 +55,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

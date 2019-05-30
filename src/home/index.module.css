@@ -26,8 +26,31 @@
   text-align: left;
 }
 
+.text_link {
+  margin-left: 0.2em;
+  border-bottom: 1px dashed;
+}
+
+.text_link:link {
+  color: black;
+}
+
+.text_link:focus {
+  color: #4FCF06;
+}
+
+.text_link:hover {
+  color: #8D8D8C;
+}
+
+.text_link:visited {
+  color: #BFBFBF;
+}
+
 .footer {
   padding: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 .footer_link + .footer_link {

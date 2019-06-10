@@ -4,12 +4,6 @@
   text-align: center;
 }
 
-.portrait {
-  max-width: 200px;
-  border-radius: 50%;
-  margin-bottom: 1em;
-}
-
 .description {
   margin-right: auto;
   margin-left: auto;
@@ -18,18 +12,12 @@
 
 @media (min-width: 768px) {
   .introduce {
-    flex-direction: row;
     margin-top: 15vh;
+    flex-direction: row;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 0;
     align-items: center;
-  }
-
-  .portrait {
-    float: left;
-    shape-outside: circle();
-    margin: 20px;
   }
 
   .description {

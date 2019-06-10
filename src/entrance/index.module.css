@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .main {
+       max-width: 860px;
+    }
+  }

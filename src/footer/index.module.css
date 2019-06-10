@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    margin-top: auto;
+    padding: 1em;
+    justify-content: center;
+}
+
+.footer_link + .footer_link {
+    margin-left: 1em;
+}
+
+.footer_link__active {
+    font-weight: bold;
+}

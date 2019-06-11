@@ -46,6 +46,7 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   vertical-align: top;
+  width: fit-content;
 }
 
 @media (min-width: 768px) {

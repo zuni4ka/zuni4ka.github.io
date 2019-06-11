@@ -8,11 +8,27 @@
   margin-right: auto;
   margin-left: auto;
   text-align: justify;
+  margin-bottom: 20px;
+}
+
+.certificate_link {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.certificate_link:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.certificate_img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  vertical-align: top;
+  width: fit-content;
 }
 
 @media (min-width: 768px) {
   .introduce {
-    margin-top: 15vh;
     flex-direction: row;
     margin-right: auto;
     margin-left: auto;
@@ -22,8 +38,17 @@
 
   .description {
     margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 0;
     margin-left: 0;
     text-align: justify;
+  }
+
+  .certificate_link {
+    max-width: 400px;
+  }
+
+  .certificate_link + .certificate_link {
+    margin-left: 20px;
   }
 }

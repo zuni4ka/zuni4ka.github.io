@@ -3,6 +3,8 @@
     margin-top: auto;
     padding: 1em;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .footer_link + .footer_link {

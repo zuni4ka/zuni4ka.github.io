@@ -11,6 +11,10 @@
   margin-bottom: 20px;
 }
 
+.text_expand {
+  letter-spacing: 1px;
+}
+
 .certificate_link {
   display: inline-block;
   margin-bottom: 20px;

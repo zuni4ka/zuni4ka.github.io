@@ -34,14 +34,6 @@ const Footer = () => {
             >
                 Contacts
             </NavLink>
-            <a
-                className={styles.footer_link}
-                href="https://github.com/zuni4ka"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Github
-            </a>
         </footer>
     );
 };

@@ -17,20 +17,21 @@
   border-bottom: 1px dashed;
 }
 
+.text_link:visited {
+  color: #BFBFBF;
+}
+
 .text_link:link {
   color: black;
 }
 
+.text_link:hover {
+  color: #4FCF06;
+  letter-spacing: 1px;
+}
+
 .text_link:focus {
   color: #4FCF06;
-}
-
-.text_link:hover {
-  color: #8D8D8C;
-}
-
-.text_link:visited {
-  color: #BFBFBF;
 }
 
 .certificate_link {

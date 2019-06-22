@@ -1,23 +1,18 @@
-.introduce {
-  margin-top: 15vh;
-  margin-bottom: auto;
-  padding: 1em;
-  text-align: center;
+.contacts {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 }
 
-.description {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: justify;
+.contacts_link {
+  display: block;
+  width: 25%;
 }
 
-.text_link {
-  margin-left: 0.2em;
-  border-bottom: 1px dashed;
-}
-
-.text_link:link {
-  color: black;
+.contacts_link + .contacts_link {
+  margin-top: 10%;
 }
 
 .text_link:focus {
@@ -25,26 +20,17 @@
 }
 
 .text_link:hover {
-  color: #8D8D8C;
-}
-
-.text_link:visited {
-  color: #BFBFBF;
+  color: #4FCF06;
 }
 
 @media (min-width: 768px) {
-  .introduce {
+  .contacts {
+    display: flex;
     flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0;
-    align-items: center;
   }
 
-  .description {
-    margin-top: 20px;
-    margin-right: 0;
-    margin-left: 0;
-    text-align: justify;
+  .contacts_link + .contacts_link {
+    margin-top: 0;
+    margin-left: 5%;
   }
 }

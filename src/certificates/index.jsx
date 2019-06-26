@@ -16,28 +16,16 @@ function Certificates() {
           </a>
         after I sucessfully defended my projects.
         </p>
-      <a
-        className={styles.certificate_link}
-        target="_blank"
-        href="./course_1.jpg"
-      >
         <img
           className={styles.certificate_img}
           src={require('./course_1.jpg')}
           alt="Professional HTML and CSS course certificate"
         />
-      </a>
-      <a
-        className={styles.certificate_link}
-        target="_blank"
-        href="./course_2.jpg"
-      >
         <img
           className={styles.certificate_img}
           src={require('./course_2.jpg')}
           alt="Professional JavaScript course certificate"
         />
-      </a>
     </div>
   );
 }

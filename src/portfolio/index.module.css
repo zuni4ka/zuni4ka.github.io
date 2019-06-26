@@ -15,16 +15,16 @@
   letter-spacing: 1px;
 }
 
-.certificate_link {
+.project_link {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.certificate_link:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+.project_link:hover {
+  box-shadow: 0 0 2px 1px  #4FCF06;
 }
 
-.certificate_img {
+.project_img {
   border: 1px solid #ddd;
   border-radius: 4px;
   vertical-align: top;
@@ -32,6 +32,15 @@
 }
 
 @media (min-width: 768px) {
+  .project_link {
+    max-width: 300px;
+  }
+  .project_link + .project_link {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
   .introduce {
     flex-direction: row;
     margin-right: auto;
@@ -48,11 +57,11 @@
     text-align: justify;
   }
 
-  .certificate_link {
+  .project_link {
     max-width: 400px;
   }
 
-  .certificate_link + .certificate_link {
+  .project_link + .project_link {
     margin-left: 20px;
   }
 }

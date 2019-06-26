@@ -12,25 +12,25 @@ function Portfolio() {
         <br /><span className={styles.text_expand}>Technologies:</span> JavaScript.
       </p>
       <a
-        className={styles.certificate_link}
+        className={styles.project_link}
         target="_blank"
         href="https://zuni4ka.github.io/sedona/"
         rel="noopener noreferrer"
       >
         <img
-          className={styles.certificate_img}
+          className={styles.project_img}
           src={require('./project_1.jpg')}
           alt="Professional HTML and CSS course project"
         />
       </a>
       <a
-        className={styles.certificate_link}
+        className={styles.project_link}
         target="_blank"
         href="https://zuni4ka.github.io/candyshop/"
         rel="noopener noreferrer"
       >
         <img
-          className={styles.certificate_img}
+          className={styles.project_img}
           src={require('./project_2.jpg')}
           alt="Professional JavaScript course project"
         />

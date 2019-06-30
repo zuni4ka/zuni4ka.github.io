@@ -1,0 +1,22 @@
+.anchor__text {
+    white-space: nowrap;
+    text-decoration: underline;
+    color: var(--link_color);
+}
+
+.anchor__text:hover {
+    color: var(--link_color__hover);
+}
+
+.icon {
+    position: relative;
+    top: 0.05em;
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.1em;
+    fill: var(--link_color);
+}
+
+.anchor__text:hover .icon {
+    fill: var(--link_color__hover);
+}

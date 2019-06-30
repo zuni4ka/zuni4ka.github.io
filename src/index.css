@@ -1,37 +1,86 @@
+:root {
+    --color: #2a2a2a;
+    --color__inverse: #efefef;
+    --color__primaryStart: #8355a0;
+    --color__primary: #5c3e6e;
+    --color__secondary: #4fcf06;
+    --content_width: 86rem;
+    --font-size__S: 1.4rem;
+    --font-size: 1.6rem;
+    --header_height: 6rem;
+    --line-height: 1.5;
+    --link_color: #3b94d9;
+    --link_color__hover: #02b9ff;
+    --space: 0.5em;
+}
+
+@media (min-width: 400px) {
+    :root {
+        --space: 5%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    :root {
+        --space: 1em;
+    }
+}
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  height: 100%;
+    font-size: 62.5%;
+    height: 100%;
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  line-height: 1.4;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--color);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  height: 100%;
-}
-
-img {
-  max-width: 100%;
+img,
+video,
+object {
+    max-width: 100%;
 }
 
 p {
-  margin: 0;
+    margin: 0;
 }
 
 a {
-  text-decoration: none;
+    color: var(--color__primary);
+    text-decoration: none;
 }
+
+dl {
+    margin-top: 0;
+    margin-bottom: var(--space);
+}
+
+dt {
+    font-size: var(--font-size__S);
+    font-weight: 600;
+}
+
+dd {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+#root {
+    height: 100%;
+}
+

@@ -1,67 +1,82 @@
-.introduce {
-  margin-bottom: auto;
-  padding: 1em;
-  text-align: center;
+.content {
+    display: block;
+}
+
+.title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.section + .section {
+    margin-top: 2em;
+}
+
+.subsection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--space);
+}
+
+.subsection_meta {
+    width: 100%;
+}
+
+.subsection_media__right,
+.subsection_media__left {
+    order: -1;
+    width: 100%;
 }
 
 .description {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: justify;
-  margin-bottom: 20px;
-}
-
-.text_expand {
-  letter-spacing: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
 }
 
 .project_link {
-  display: inline-block;
-  margin-bottom: 20px;
+    float: right;
+    margin-bottom: var(--space);
 }
 
 .project_link:hover {
-  box-shadow: 0 0 2px 1px  #4FCF06;
+    transition: box-shadow 0.2s linear;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px var(--color__secondary);
 }
 
 .project_img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  vertical-align: top;
-  width: fit-content;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    vertical-align: top;
+    width: fit-content;
 }
 
 @media (min-width: 768px) {
-  .project_link {
-    max-width: 300px;
-  }
-  .project_link + .project_link {
-    margin-left: 20px;
-  }
-}
+    .title {
+        font-size: 3em;
+    }
 
-@media (min-width: 1024px) {
-  .introduce {
-    flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0;
-    align-items: center;
-  }
+    .subsection {
+        flex-wrap: nowrap;
+        margin-top: 4rem;
+    }
 
-  .description {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0;
-    margin-left: 0;
-    text-align: justify;
-  }
+    .subsection_meta {
+        width: 50%;
+    }
 
-  .project_link {
-    max-width: 400px;
-  }
+    .subsection_media__right {
+        order: 0;
+        width: 50%;
+        padding-left: 2rem;
+    }
 
-  .project_link + .project_link {
-    margin-left: 20px;
-  }
+    .subsection_media__left {
+        width: 50%;
+        padding-right: 2rem;
+    }
 }

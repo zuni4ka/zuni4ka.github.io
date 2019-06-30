@@ -1,0 +1,89 @@
+@keyframes whoop {
+    0% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    order: 1;
+    bottom: 0;
+    width: 100%;
+    height: var(--header_height);
+}
+
+.header::after {
+    --gradient: linear-gradient(90deg, var(--color__primaryStart) 0%, var(--color__primary) 100%);
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -1;
+    background-image: var(--gradient);
+    content: '';
+    transform: rotate(-2deg);
+    animation-name: whoop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.z {
+    display: none;
+    width: auto;
+    height: 80%;
+    transform: translateY(25%);
+}
+
+.z path {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.2rem;
+    transition: 0.2s;
+
+    stroke-dasharray: 500%;
+    stroke-dashoffset: 500%;
+    animation: dash 1s linear forwards;
+}
+
+.z:hover path {
+    d: path('M2,2 L8,2 L2,8 L8,7');
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        top: 0;
+        bottom: auto;
+    }
+
+    .header::after {
+        top: -75%;
+    }
+
+    .z {
+        display: block;
+    }
+}
+

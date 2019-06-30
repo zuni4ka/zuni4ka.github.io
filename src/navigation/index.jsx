@@ -2,40 +2,40 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import * as styles from './index.module.css';
 
-const Footer = () => {
+const Navigation = () => {
     return (
-        <footer className={styles.footer}>
+        <nav className={styles.navigation}>
             <NavLink
-                className={styles.footer_link}
-                activeClassName={styles.footer_link__active}
+                className={styles.navigation_link}
+                activeClassName={styles.navigation_link__active}
                 to="/"
                 exact
             >
                 Home
             </NavLink>
             <NavLink
-                className={styles.footer_link}
-                activeClassName={styles.footer_link__active}
+                className={styles.navigation_link}
+                activeClassName={styles.navigation_link__active}
                 to="/certificates"
             >
                 Certificates
             </NavLink>
             <NavLink
-                className={styles.footer_link}
-                activeClassName={styles.footer_link__active}
+                className={styles.navigation_link}
+                activeClassName={styles.navigation_link__active}
                 to="/portfolio"
             >
                 Portfolio
             </NavLink>
             <NavLink
-                className={styles.footer_link}
-                activeClassName={styles.footer_link__active}
+                className={styles.navigation_link}
+                activeClassName={styles.navigation_link__active}
                 to="/contacts"
             >
                 Contacts
             </NavLink>
-        </footer>
+        </nav>
     );
 };
 
-export default Footer;
+export default Navigation;

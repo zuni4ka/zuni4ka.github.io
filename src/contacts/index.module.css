@@ -1,36 +1,42 @@
-.contacts {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
 }
 
 .contacts_link {
-  display: block;
-  width: 25%;
+    display: block;
+    width: 25%;
 }
 
 .contacts_link + .contacts_link {
-  margin-top: 10%;
+    margin-top: 10%;
 }
 
-.icon:hover path { 
-  fill: #4FCF06;
+.icon {
+    fill: var(--color__primary);
+    transition: fill 0.2s linear;
 }
 
-.icon_color:hover {
-  fill: #4FCF06;
+.icon:hover {
+    fill: var(--color__secondary);
 }
 
 @media (min-width: 768px) {
-  .contacts {
-    display: flex;
-    flex-direction: row;
-  }
+    .content {
+        flex-direction: row;
+        margin-top: 15vh;
+    }
 
-  .contacts_link + .contacts_link {
-    margin-top: 0;
-    margin-left: 5%;
-  }
+    .contacts_link {
+        width: 15%;
+    }
+
+    .contacts_link + .contacts_link {
+        margin-top: 0;
+        margin-left: 5%;
+    }
 }

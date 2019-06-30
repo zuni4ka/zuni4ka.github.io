@@ -1,6 +1,4 @@
-.introduce {
-  margin-bottom: auto;
-  padding: 1em;
+.content {
   text-align: center;
 }
 
@@ -8,35 +6,12 @@
   margin-right: auto;
   margin-left: auto;
   text-align: justify;
-  margin-bottom: 20px;
-}
-
-.text_link {
-  margin-left: 0.2em;
-  margin-right: 0.2em;
-  border-bottom: 1px dashed;
-}
-
-.text_link:visited {
-  color: #BFBFBF;
-}
-
-.text_link:link {
-  color: black;
-}
-
-.text_link:hover {
-  color: #4FCF06;
-  letter-spacing: 1px;
-}
-
-.text_link:focus {
-  color: #4FCF06;
+  margin-bottom: 2rem;
 }
 
 .certificate_img {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   vertical-align: top;
@@ -45,35 +20,19 @@
 
 @media (min-width: 768px) {
   .certificate_img {
-    max-width: 300px;
+    max-width: 30rem;
   }
   .certificate_img + .certificate_img {
-    margin-left: 20px;
+    margin-left: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .introduce {
-    flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0;
-    align-items: center;
-  }
-
-  .description {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 0;
-    margin-left: 0;
-    text-align: justify;
-  }
-
   .certificate_img {
-    max-width: 400px;
+    max-width: 40rem;
   }
 
   .certificate_img + .certificate_img {
-    margin-left: 20px;
+    margin-left: 2rem;
   }
 }

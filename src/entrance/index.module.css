@@ -1,13 +1,16 @@
-.main {
+.entrance {
     display: flex;
     flex-direction: column;
     height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+.main {
+    padding-top: 5vh;
+    padding-bottom: var(--header_height);
+}
+
+@media (min-width: 768px) {
     .main {
-       max-width: 860px;
+        padding-top: calc(var(--header_height) * 2);
     }
-  }
+}

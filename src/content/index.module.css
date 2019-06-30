@@ -1,0 +1,7 @@
+.content {
+    max-width: var(--content_width);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--space);
+    padding-left: var(--space);
+}
